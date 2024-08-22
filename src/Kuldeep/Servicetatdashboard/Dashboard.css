@@ -1,0 +1,204 @@
+.app-repairdashboard {
+  font-weight: 500;
+  /* border: 1px solid #ccc; */
+  /* padding: 8px; */
+}
+.app-dates {
+  font-weight: 500;
+}
+.app-compulsory {
+  color: rgb(167, 26, 50);
+  font-weight: 700;
+  font-size: 20px;
+}
+.app-search {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 3px;
+  background-color: #28a745;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+.app-boxh {
+  font-size: 10px;
+}
+.app-h2 {
+  font-size: 13px;
+}
+.app-box1 {
+  background-color: #c90000;
+  color: white;
+  font-weight: 500;
+  border-radius: 14px;
+}
+.app-box2 {
+  background-color: #6069ab;
+  color: white;
+  font-weight: 500;
+  border-radius: 14px;
+}
+.app-box7 {
+  background-color: #63a4ff;
+  color: white;
+  font-weight: 500;
+  border-radius: 14px;
+}
+.app-box3 {
+  background-color: #026234;
+  color: white;
+  font-weight: 500;
+  border-radius: 14px;
+}
+.app-box4 {
+  background-color: #169ac3;
+  color: white;
+  font-weight: 500;
+  border-radius: 14px;
+}
+.app-box5 {
+  background-color: #e8734d;
+  color: white;
+  font-weight: 500;
+  border-radius: 14px;
+}
+.app-box6 {
+  background-color: #db9b7c;
+  color: white;
+  font-weight: 500;
+  border-radius: 14px;
+}
+.app-box01 {
+  background-color: #3d8c29;
+  color: white;
+  font-weight: 400;
+  font-size: xx-large;
+  border-radius: 14px;
+}
+.app-box02 {
+  background-color: #e70a0a;
+  color: white;
+  font-weight: 400;
+  font-size: xx-large;
+  border-radius: 14px;
+}
+.app-box03 {
+  background-color: #ed7d31;
+  color: white;
+  font-weight: 400;
+  font-size: xx-large;
+  border-radius: 14px;
+}
+.app-box04 {
+  background-color: #5f9dac;
+  color: white;
+  font-weight: 400;
+  font-size: xx-large;
+  border-radius: 14px;
+}
+.app-box05 {
+  background-color: #324a9f;
+  color: white;
+  font-weight: 400;
+  font-size: xx-large;
+  border-radius: 14px;
+}
+.app-box06 {
+  background-color: #ffb531;
+  color: white;
+  font-weight: 400;
+  font-size: xx-large;
+  border-radius: 14px;
+}
+.app-box07 {
+  background-color: #01b763;
+  color: white;
+  font-weight: 400;
+  font-size: xx-large;
+  border-radius: 14px;
+}
+.app-box08 {
+  background-color: #930808;
+  color: white;
+  font-weight: 400;
+  font-size: xx-large;
+  border-radius: 14px;
+}
+
+.app-calls-box {
+  background-color: #d2f0f4;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: xx-large;
+}
+.app-cards {
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3); */
+  border-radius: 16px;
+  /* border: #f5f5f5; */
+}
+.charts {
+  max-width: 400px;
+  max-height: 300px;
+}
+rect[fill="#3366cc"] {
+  display: none;
+}
+.tableContainer {
+  border-radius: 16px;
+  background-color: #eef6f6;
+}
+
+
+/* rect[fill="#333333"] {
+    display: none;
+}
+    
+    
+rect[fill="#cccccc"] {
+    display: none;
+} */
+rect[fill="#ffffff"] {
+  background-color: "#f5f5f5";
+}
+.select-width {
+  max-width: 80px;
+}
+.select-widthdrt {
+  max-width: 60px;
+}
+.select-width1 {
+  height: 25px;
+  width: 80px;
+}
+
+#placeSelector {
+  /* border: 1px solid; */
+  padding: 5px;
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* Moved border to the CSS class */
+}
+
+#performance_box_mssg {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.rounded-chart-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.rounded-chart-container .google-visualization-chart-bar {
+  border-radius: 10px; /* Adjust the radius to match your design */
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .col{
+    flex: none;
+  }
+}

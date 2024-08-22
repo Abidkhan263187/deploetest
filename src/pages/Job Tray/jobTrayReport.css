@@ -1,0 +1,32 @@
+/* *{
+    background-color: #fff;
+} */
+
+.container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .companyLogo {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .firebolttLogo {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .btn{
+    width: 300px;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: none;
+  }
+  /* .btn-contained */

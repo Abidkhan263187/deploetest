@@ -1,0 +1,63 @@
+.modal-container1 {
+    /* background-color: #EFF3FE; */
+    padding: 2rem;
+    width: 182.6vh;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.MuiTypography-root.text-styles {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #33499F;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.custom-image {
+    cursor: pointer;
+}
+
+.MuiTypography-root.MuiTypography-body1 {
+    color: #2E3135;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.print-label {
+    color: #000000;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.MuiTypography-root.MuiTypography-h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24.51px;
+}
+
+.part-required {
+    color: #33499F;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+.success-button{
+    color: white;
+    background-color: #28A745;
+}
+.primary-button{
+    color:white;
+    background-color: #33499F ;   
+}
+.delete-button{
+    color:white;
+    background-color: #930808 ;   
+}

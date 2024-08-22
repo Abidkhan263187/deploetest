@@ -1,0 +1,27 @@
+.acknowledge-btn {
+  color: white;
+  background-color: #2255a4;
+}
+
+.MuiDataGrid-root {
+  overflow-x: hidden !important;
+}
+
+.MuiDataGrid-columnHeader {
+  overflow: hidden;
+}
+/* Custom styles for DataGrid headers */
+.custom-data-grid .MuiDataGrid-columnHeaders {
+  background-color: #324a9f !important;
+  color: white !important;
+}
+
+/* Ensure that your class is applied to the DataGrid */
+.custom-data-grid .MuiDataGrid-container--top [role="row"],
+.custom-data-grid .MuiDataGrid-container--bottom [role="row"] {
+  background: none !important; /* Remove background from specific containers if needed */
+}
+/* src/styles/DataGridStyles.css */
+.custom-data-grid .css-wop1k0-MuiDataGrid-footerContainer {
+  display: none; /* Hide the footer container */
+}

@@ -1,0 +1,257 @@
+{/* Box 2 */}
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            background: "#EFF3FE",
+            marginLeft: "10px",
+            marginTop: "4px",
+            marginRight: "10px",
+            fontFamily: ["Roboto", "Helvetica", "Arial", "sans-serif"],
+            width: "100%",
+            borderRadius: "5px",
+            padding: "10px",
+            fontWeight: 600,
+          }}
+        >
+          <Grid>
+            <InputLabel sx={{ fontWeight: "600", margin: "0" }}>
+              Bulk Upload
+            </InputLabel>
+          </Grid>
+
+          <Grid container sx={{ margin: "15px 0" }}>
+            <label>Upload</label>
+          </Grid>
+          <Grid container gap={2}>
+            <Grid item xs={12} sm={6} md={2}>
+              <Button
+                component="label"
+                role={undefined}
+                variant="contained"
+                tabIndex={-1}
+                startIcon={<CloudUploadIcon />}
+                sx={{ justifyContent: "center" }}
+              >
+                Upload file
+                <VisuallyHiddenInput type="file" />
+              </Button>
+            </Grid>
+            <Grid item xs={12} sm={6} md={2}>
+              <Button
+                variant="contained"
+                sx={{
+                  width: "9.5rem",
+                  outline: "none",
+                  "&:focus": { outline: "none" },
+                }}
+              >
+                Upload
+              </Button>
+            </Grid>
+            <Grid item xs={12} sm={6} md={2} sx={{ justifyContent: "center" }}>
+              <Link href="#" underline="none">
+                {"Download Template"}
+              </Link>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <Link href="#" underline="none">
+                {"Download Reference Code"}
+              </Link>
+            </Grid>
+          </Grid>
+        </Grid>
+        {/* Box 3 */}
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            background: "#EFF3FE",
+            marginLeft: "10px",
+            marginTop: "4px",
+            marginRight: "10px",
+            fontFamily: ["Roboto", "Helvetica", "Arial", "sans-serif"],
+            width: "100%",
+            borderRadius: "5px",
+            padding: "10px",
+            fontWeight: 600,
+          }}
+        >
+          <Grid>
+            <label>List View</label>
+          </Grid>
+
+          <Grid container sx={{ margin: "auto", justifyContent: "" }}>
+            <Grid item md={3}>
+              <Box
+                component="form"
+                sx={{
+                  "& > :not(style)": { width: "20ch" },
+                }}
+                noValidate
+                autoComplete="off"
+              >
+                <TextField
+                  style={{ width: "80%" }}
+                  id="standard-basic"
+                  label="Symptom Code"
+                  variant="standard"
+                />
+              </Box>
+            </Grid>
+            <Grid item md={3}>
+              <FormControl
+                variant="standard"
+                sx={{ m: 1, width: "80%", width: "20ch" }}
+              >
+                <InputLabel id="demo-simple-select-standard-label">
+                  Symptom Group
+                </InputLabel>
+                <Select
+                  labelId="demo-simple-select-standard-label"
+                  id="demo-simple-select-standard"
+                  value={ViewSymptomType}
+                  onChange={handleViewSymptomDropdown}
+                  label="Age"
+                  placeholder="Select"
+                  autoWidth
+                >
+                  {symptomList.length === 0 ? (
+                    <MenuItem value="">
+                      <em>No Item</em>
+                    </MenuItem>
+                  ) : (
+                    symptomList.map((symptomGroup) => (
+                      <MenuItem
+                        key={symptomGroup.symptomID}
+                        value={symptomGroup.symptomID}
+                      >
+                        {symptomGroup.symptomGroup}
+                      </MenuItem>
+                    ))
+                  )}
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item md={3}>
+              <FormControl
+                variant="standard"
+                sx={{ m: 1, width: "80%", width: "20ch" }}
+              >
+                <InputLabel id="demo-simple-select-standard-label">
+                  Product Category
+                </InputLabel>
+                <Select
+                  labelId="demo-simple-select-standard-label"
+                  id="demo-simple-select-standard"
+                  value={categoryType}
+                  onChange={handleCategoryDropdown}
+                  label="Product Category"
+                  placeholder="Select"
+                  autoWidth
+                >
+                  {productCategoryList.length === 0 ? (
+                    <MenuItem value="">
+                      <em>No Item</em>
+                    </MenuItem>
+                  ) : (
+                    productCategoryList.map((product) => (
+                      <MenuItem
+                        key={product.productCategoryID}
+                        s
+                        value={product.categorySapCode}
+                      >
+                        {product.categorySapCode}
+                      </MenuItem>
+                    ))
+                  )}
+                </Select>
+              </FormControl>
+            </Grid>
+
+            <Grid item md={3}>
+              <Button
+                variant="contained"
+                onClick={handleSearch}
+                sx={{
+                  width: "10rem",
+                  marginTop: "1.3rem",
+                  marginLeft: "1rem",
+                  ouline: "none",
+                  "&:focus": { outline: "none" },
+                }}
+              >
+                Search
+              </Button>
+            </Grid>
+          </Grid>
+
+          <Grid container sx={{ margin: "25px 10px 0 0", overflow: "auto" }}>
+            <TableContainer component={Paper}>
+              <Table aria-label="simple table">
+                <TableHead
+                  sx={{
+                    backgroundColor: "#1976d2",
+                    width: "100%",
+                    color: "red",
+                  }}
+                >
+                  <TableRow>
+                    <TableCell sx={{ color: "#fff" }}>Symptom Code</TableCell>
+                    <TableCell sx={{ color: "#fff" }}>Description</TableCell>
+                    <TableCell sx={{ color: "#fff" }}>Symptom Group</TableCell>
+                    <TableCell sx={{ color: "#fff" }}>Category</TableCell>
+                    <TableCell align="right" sx={{ color: "#fff" }}>
+                      Action
+                    </TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {symptomCodeList.map((row, index) => (
+                    <TableRow key={row}>
+                      <TableCell>{row.symptomCode}</TableCell>
+                      <TableCell>{row.symptomDescription}</TableCell>
+                      <TableCell>{row.symptomGroupDesc}</TableCell>
+                      <TableCell>{row.symptomFor}</TableCell>
+                      <TableCell align="right">
+                        {/* Action icons */}
+                        <IconButton
+                          onClick={() => handleActive(index``)}
+                          sx={{
+                            outline: "none",
+                            "&:focus": { outline: "none" },
+                          }}
+                        >
+                          <img
+                            src={
+                              row.status === 1
+                                ? "/src/assets/activeBulb.svg"
+                                : "/src/assets/inactiveBulb.svg"
+                            }
+                            alt="Active Bulb"
+                            height={"20px"}
+                            width={"20px"}
+                          />
+                        </IconButton>
+                        <IconButton
+                          onClick={() => handleEdit(index)}
+                          sx={{
+                            outline: "none",
+                            "&:focus": { outline: "none" },
+                          }}
+                        >
+                          <img
+                            src="/src/assets/edit.svg"
+                            alt="Edit"
+                            height={"20px"}
+                            width={"20px"}
+                          />
+                        </IconButton>
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </Grid>
+        </Grid>

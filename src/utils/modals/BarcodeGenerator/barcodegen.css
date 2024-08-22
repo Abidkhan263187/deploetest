@@ -1,0 +1,24 @@
+/* barcodegen.css */
+
+.barcode-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .barcode-container svg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .print-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .print-btn img {
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+  }
+  

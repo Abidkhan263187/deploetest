@@ -1,0 +1,44 @@
+.css-rbkf71 {
+  width: 100%;
+}
+
+.textfield-box {
+  background-color: #eff3fe;
+  margin: 10px;
+  padding: 10px;
+  /* border: 1px solid; */
+  width: 75vw !important;
+}
+
+.line-textfield {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.Autocomplete {
+  width: 20%;
+}
+
+.text {
+  width: 20%;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+.upload {
+  display: flex;
+  gap: 15px;
+}
+
+.table-heading {
+  background-color: #32499f;
+}
+#productModelForm {
+  width: 100%;
+  /* border: 1px solid; */
+}

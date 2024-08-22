@@ -1,0 +1,172 @@
+.app-repairdashboard {
+  font-weight: 500;
+  /* border: 1px solid #ccc; */
+  /* padding: 8px; */
+}
+.app-dates {
+  font-weight: 500;
+  margin-bottom: 10px !important;
+}
+.app-compulsory {
+  color: rgb(250, 12, 12) !important;
+  font-weight: 700;
+}
+
+#searchBtnDiv {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 5%;
+}
+.app-boxh {
+  font-size: 10px;
+}
+.app-box1 {
+  background-color: #c90000;
+  color: white;
+  font-weight: 800;
+  font-size: xx-large;
+  border-radius: 15px !important;
+}
+.app-box2 {
+  background-color: #6069ab;
+  color: white;
+  font-weight: 800;
+  border-radius: 15px !important;
+}
+.app-box7 {
+  background-color: #63a4ff;
+  color: white;
+  font-weight: 800;
+  border-radius: 15px !important;
+}
+.app-box3 {
+  background-color: #026234;
+  color: white;
+  font-weight: 800;
+  border-radius: 15px !important;
+}
+.app-box4 {
+  background-color: #169ac3;
+  color: white;
+  font-weight: 800;
+  border-radius: 15px !important;
+}
+.app-box5 {
+  background-color: #e8734d;
+  color: white;
+  font-weight: 800;
+  border-radius: 15px !important;
+}
+.app-box6 {
+  background-color: #db9b7c;
+  color: white;
+  font-weight: 800;
+  border-radius: 15px !important;
+}
+.app-calls-box {
+  background-color: #d2f0f4;
+  border-radius: 4px;
+}
+.app-cards {
+  /* box-shadow: 4px 4px 8px 0px #00000040; */
+
+  border-radius: 22px;
+  border: none;
+}
+.tableContainer {
+  border-radius: 16px;
+  background-color: #eef6f6;
+}
+.charts {
+  max-width: 400px;
+  max-height: 300px;
+}
+rect[fill="#3366cc"] {
+  display: none;
+}
+/* Style the select box */
+.select-custom {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Hide the default dropdown arrow */
+.select-custom select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none; /* Standard */
+  padding: 8px; /* Adjust padding for better look */
+  background-color: #fff; /* Background color */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 4px; /* Rounded corners */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Custom dropdown arrow */
+.select-custom::after {
+  content: "▼"; /* Unicode character for dropdown arrow */
+  font-size: 16px;
+  color: #000; /* Arrow color */
+  position: absolute;
+  right: 10px; /* Position it inside the select box */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Make sure clicks pass through */
+}
+
+.select-custom select option:disabled {
+  color: #999; /* Light grey color */
+}
+rect[fill="#333333"] {
+  display: none;
+}
+rect[fill="#cccccc"] {
+  display: none;
+}
+.date-picker {
+  width: 90%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.typography {
+  font-weight: 700 !important;
+  color: #313131;
+}
+#calls {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+/* .barchart-container .google-visualization-bar {
+  border-radius: 10px !important;
+}
+.barchart-container .google-visualization-bar {
+  border-radius: 10px !important;
+} */
+
+
+@media (max-width: 767px) {
+  #searchBtnDsh {
+    margin-left: 0%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #searchBtnDsh {
+    margin-left: 0%;
+  }
+}

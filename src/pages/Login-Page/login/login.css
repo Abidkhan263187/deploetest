@@ -1,0 +1,76 @@
+/* .MuiTextField-root{
+  background-color: red;
+} */
+.MuiInputBase-fullWidth input{
+  height: 10px;
+}
+
+.formContainer {
+  background-color: white;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+
+  /* margin-bottom: 20 rem; */
+  margin-bottom: auto;
+
+}
+
+/* .formElements {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 0.625rem;
+} */
+
+
+/* .MuiInputBase-input-MuiOutlinedInput-input{
+  padding: 10px;
+  background-color: red;
+} */
+
+/* .companyLogoImage {
+  max-width: 100%;
+  height: auto;
+} */
+
+/* .inputText {
+  text-align: left;
+  color: #7b7b7b !important;
+  font-size: 18px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  margin: auto;
+} */
+
+/* .rememberMe {
+  justify-content: space-between;
+  /* align-items: center;
+} */
+
+.forgotPasswordText {
+  text-align: right;
+  color: blue !important;
+  font-size: 18px !important;
+  font-family: bold !important;
+}
+
+
+.forgot-btn {
+  color: #32499f !important;
+  font-size: 18px !important;
+  font-family: Roboto !important;
+} */
+/* .serviceNameText {
+  text-align: center;
+  color: #33499f !important;
+  font-size: 40px !important;
+  font-weight: 900;
+} */
+
+/* .poweredByText {
+  text-align: center;
+  color: #7b7b7b !important;
+  font-size: 14px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  margin-top: 1rem;
+} */

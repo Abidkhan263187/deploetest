@@ -1,0 +1,22 @@
+.rejection-modal-container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #EFF3FE;
+    padding: 3rem;
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 80vh;
+}
+
+.rejection-modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.submit-btn{
+    background-color: #E74040;
+    color: white;
+}

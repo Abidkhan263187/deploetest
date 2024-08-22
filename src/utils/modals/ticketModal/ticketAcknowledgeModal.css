@@ -1,0 +1,85 @@
+.ticket-modal-container {
+  position: relative;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  background-color: #eff3fe;
+  padding: 2rem;
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 150vh;
+}
+
+.ticket-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.MuiTypography-root.text-styles {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: #33499f;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+.custom-image {
+  cursor: pointer;
+}
+
+.MuiTypography-root.MuiTypography-body1 {
+  color: #2e3135;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.print-label {
+  color: #000000;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+.MuiTypography-root.MuiTypography-h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24.51px;
+}
+.jobsheet-btn {
+  background-color: #33499f;
+  color: white;
+}
+.lable-btn {
+  color: white;
+  background-color: #33499f !important;
+  cursor: pointer;
+}
+
+
+.reject-btn {
+  background-color: #f35244;
+  color: white;
+  width: 150px;
+}
+.on-hold-btn {
+  background-color: #f58634;
+  color: white;
+  width: 150px;
+}
+.force-close {
+  background-color: #419bc2;
+  color: white;
+}
+.jobsheet-btn:disabled,
+.reject-btn:disabled,
+.on-hold-btn:disabled,
+.force-close:disabled,
+.lable-btn:disabled {
+  cursor: not-allowed; /* Makes the cursor appear as not-allowed */
+  opacity: 0.5;
+  /* Optional: Makes the button appear disabled */
+}

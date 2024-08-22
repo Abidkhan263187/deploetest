@@ -1,0 +1,52 @@
+.dashboard-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 100px solid #ccc;
+}
+
+.box-Reappointment {
+  display: flex;
+}
+
+.First-box-Reappointment {
+  background-color: #EFF3FE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 185px;
+  border-radius: 10px;
+  gap: 2rem;
+  margin: 10px;
+  padding: 8px;
+  font-size: x-large;
+  overflow: hidden
+}
+
+ .First-box-Reappointment:hover {
+  background-color: #33499F;
+  color: white;
+  cursor: pointer;
+}
+
+.box-Reappointment.active {
+  background-color: #00f;
+} 
+
+.reapirUpdata{
+  height: 35px;
+}
+
+#dashTableHead{
+  padding: 10px 6px !important;
+  text-align: center;
+  width: max-content!important;
+}
+
+/* width="30"
+                          style={{
+                            cursor: "pointer",
+                            position: "relative",
+                            top: "12px",
+                          }} */

@@ -1,0 +1,47 @@
+.textfield-box {
+  background-color: #eff3fe;
+  margin: 10px;
+  padding: 10px;
+}
+
+.line-textfield {
+  display: flex;
+  justify-content: start !important;
+  margin: 15px;
+  gap:10%;
+ 
+}
+
+.Autocomplete {
+  width: 20%;
+  padding-top:20px !important ;
+ 
+}
+.css-ka7ti6-MuiAutocomplete-root .MuiInput-root {
+  padding-bottom: 20px !important;
+}
+
+.text {
+  width: 20%;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 5%!important;
+}
+
+.upload {
+  display: flex;
+  gap: 15px;
+}
+
+.table-heading {
+  background-color: #32499f;
+}
+#paginationDiv {
+  margin-bottom: 5%;
+}
+#filterDiv {
+  display: flex;
+}

@@ -1,0 +1,80 @@
+@media print {
+  .modal-container {
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    background-color: white !important;
+    padding: 0.5rem !important;
+    margin: 0 !important;
+    position: relative;
+    font-size: 0.7rem !important;
+    page-break-inside: auto !important;
+    page-break-before: auto !important;
+    page-break-after: auto !important;
+  }
+
+  .repair-button,
+  .print-button,
+  .other-unwanted-element {
+    display: none !important;
+  }
+
+  .page-break {
+    page-break-before: always !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 1cm;
+  }
+
+  .modal-container:after {
+    content: "";
+    display: block;
+    page-break-after: always !important;
+  }
+
+  .force-page-break {
+    page-break-before: always !important;
+  }
+
+  .no-break {
+    page-break-inside: avoid;
+  }
+
+  /* Set table head background color to #1976d2 for print */
+  th {
+    font-size: 0.8rem !important;
+    background-color: #1976d2 !important; /* Ensure this color is applied on print */
+    color: rgb(255, 255, 255) !important;
+    padding: 0.5rem 0rem 0.5rem 0.2rem !important;
+    text-align: left !important;
+  }
+
+  td {
+    padding: 0.5rem !important;
+    font-size: 15px !important;
+  }
+  .custom-image {
+    /* Replace this with the actual class or ID for the cross icon */
+    display: none !important;
+  }
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+th {
+  font-size: 0.8rem !important;
+  background-color: #1976d2 !important; /* Ensure this color is applied on print */
+  color: rgb(255, 255, 255) !important;
+  padding: 0.5rem 0rem 0.5rem 0.2rem !important;
+  text-align: left !important;
+}

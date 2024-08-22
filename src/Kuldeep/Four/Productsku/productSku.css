@@ -1,0 +1,37 @@
+.textfield-box {
+  background-color: #eff3fe;
+  margin: 10px;
+  padding: 10px;
+}
+
+.line-textfield {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.Autocomplete {
+  width: 20%;
+}
+
+.text {
+  width: 20%;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+.upload {
+  display: flex;
+  gap: 15px;
+}
+
+.table-heading {
+  background-color: #32499f;
+}
+#paginationDiv {
+  margin-bottom: 5% !important;
+}

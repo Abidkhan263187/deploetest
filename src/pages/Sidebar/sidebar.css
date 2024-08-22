@@ -1,0 +1,53 @@
+.MuiListItem-root a {
+    width: 100% !important;
+}
+
+
+/* Style the scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  /* Style the scrollbar for Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #c5c3c3 #f1f1f1;
+  }
+  
+  /* Apply specific styles for the drawer */
+  .MuiDrawer-paper::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .MuiDrawer-paper::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  .MuiDrawer-paper::-webkit-scrollbar-thumb {
+    background: #c5c3c3; 
+    border-radius: 10px;
+  }
+  
+  .MuiDrawer-paper::-webkit-scrollbar-thumb:hover {
+    background: #c5c3c3; 
+  }
+  
+  /* For Firefox */
+  .MuiDrawer-paper {
+    scrollbar-width: thin;
+    scrollbar-color: #c5c3c3 #f1f1f1;
+  }
+  
